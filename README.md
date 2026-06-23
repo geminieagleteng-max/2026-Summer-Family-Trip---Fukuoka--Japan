@@ -1,6 +1,6 @@
 # ✈️ 2026 暑假日本福岡家庭旅遊 - 導覽網站
 
-本專案是一個專為 2026 年日本福岡家庭旅遊設計的極致導覽網站。專為旅遊公司或家庭成員檢視設計，具備現代化高質感設計（包含玻璃貼水質感、漸層文字與流暢動畫），且完全相容並可輕鬆架設於 **GitHub Pages** 上。
+本專案是一個專為 2026 年日本福岡家庭旅遊設計的極致導覽網站。專為旅遊公司或家庭成員檢視設計，具備現代化高質感設計（包含玻璃貼水質感、漸層文字與流暢動畫），並配置了 **GitHub Actions** 自動化部署工作流，讓您每次推播（push）到 GitHub 時自動部署至 **GitHub Pages**。
 
 ## 🌟 網頁功能特色
 1. **每日行程時間軸 (Itinerary Timeline)**：互動式 Day 1 至 Day 7 行程切換，時間點清晰明瞭。
@@ -36,21 +36,25 @@ npm run build
 
 ---
 
-## 🚀 如何架設於 GitHub Pages？
+## 🚀 使用 GitHub Actions 自動部署至 GitHub Pages
 
-這個網站是純靜態網頁（HTML/CSS/JS），您可以選擇以下兩種最簡單的方法來架設在 GitHub Pages 上：
+我們已經為您配置好了自動化部署流程，當您將專案推送到 GitHub 時，系統會自動使用 Vite 編譯並部署網頁：
 
-### 方法 A：直接部署根目錄（最推薦，最簡單）
-因為專案內部的檔案路徑皆採用**相對路徑**，您可以直接將根目錄的靜態檔案上傳至 GitHub，無需任何編譯：
-1. 在 GitHub 上建立一個新的儲存庫（Repository，例如 `fukuoka-trip`）。
-2. 將專案根目錄下的所有檔案（**排除 `node_modules/`**）推送到 GitHub 的 `main`（或 `master`）分支：
-   - 包含 `index.html`、`style.css`、`app.js`、`images/`。
-3. 進入 GitHub 儲存庫的 **Settings（設定）** $\rightarrow$ **Pages**。
-4. 在 **Build and deployment** 下，將 Source 設定為 `Deploy from a branch`。
-5. Branch 選擇 `main`，資料夾選擇 `/ (root)`，點擊 **Save**。
-6. 等待約 1-2 分鐘，即可透過 `https://<您的帳號>.github.io/fukuoka-trip/` 瀏覽網站！
+### 步驟 1：建立並推送至 GitHub
+1. 在 GitHub 上建立一個新的儲存庫（Repository，例如 `fukuoka-trip-2026`）。
+2. 初始化本地 Git 儲存庫並推送到 GitHub：
+   ```bash
+   git init
+   git add .
+   git commit -m "feat: init fukuoka guide web with github actions"
+   git branch -M main
+   git remote add origin https://github.com/<您的帳號>/fukuoka-trip-2026.git
+   git push -u origin main
+   ```
 
-### 方法 B：使用 GitHub Actions 自動編譯 Vite
-如果您希望推播程式碼後，讓 GitHub 自動幫您執行 `npm run build` 並部署 `dist` 資料夾：
-1. 可以參考 Vite 官方的 GitHub Pages 部署指南，或在專案中建立 `.github/workflows/deploy.yml` 檔案。
-2. 配置完成後，每次 push 至 `main` 分支，GitHub 將會自動編譯並更新網頁。
+### 步驟 2：開啟 GitHub Pages 的 Actions 權限
+1. 進入您的 GitHub 儲存庫頁面，點擊 **Settings（設定）**。
+2. 在左側選單中找到並點選 **Pages**。
+3. 在 **Build and deployment** 下方的 **Source**，將其下拉選單從 `Deploy from a branch` 改為 **`GitHub Actions`**。
+4. 之後，每當您執行 `git push` 把新程式碼推送到 `main` 分支時，GitHub Actions 都會自動啟動建置，並將 `dist/` 資料夾部署至 `https://<您的帳號>.github.io/fukuoka-trip-2026/`！
+5. 您可以在儲存庫的 **Actions** 頁籤中查看部署進度與日誌。
