@@ -1,0 +1,14 @@
+{
+  "name": "fukuoka-trip-2026",
+  "version": "1.0.0",
+  "description": "2026 暑假日本福岡家庭旅遊極致導覽網站",
+  "main": "index.html",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0"
+  }
+}

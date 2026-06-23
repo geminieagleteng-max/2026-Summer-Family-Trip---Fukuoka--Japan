@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2026 暑假日本福岡家庭旅遊 - 極致行程導覽</title>
+  <!-- Google Fonts: Inter & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Outfit:wght@400;600;800&family=Noto+Sans+TC:wght@300;400;700&display=swap" rel="stylesheet">
+  <!-- FontAwesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script type="module" crossorigin src="/assets/index-CUvVVqRR.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-BnG1weQm.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">
+        <i class="fa-solid fa-compass logo-icon"></i>
+        <span>極光旅行社 <span class="sub-brand">Fukuoka 2026</span></span>
+      </a>
+      <ul class="nav-menu">
+        <li><a href="#hero" class="nav-link active"><i class="fa-solid fa-house"></i> 首頁</a></li>
+        <li><a href="#itinerary" class="nav-link"><i class="fa-solid fa-calendar-days"></i> 每日行程</a></li>
+        <li><a href="#attractions" class="nav-link"><i class="fa-solid fa-map-location-dot"></i> 景點特色</a></li>
+        <li><a href="#hotels" class="nav-link"><i class="fa-solid fa-hotel"></i> 飯店行李</a></li>
+        <li><a href="#passes" class="nav-link"><i class="fa-solid fa-ticket"></i> 交通票券</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a href="#itinerary" class="btn btn-sm">開始探索</a>
+      </div>
+      <button class="menu-toggle" id="mobile-menu-btn" aria-label="Toggle Menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero-section" id="hero">
+    <div class="hero-bg" style="background-image: linear-gradient(to bottom, rgba(10, 15, 30, 0.4), rgba(10, 15, 30, 0.95)), url('/assets/hero-YcrzNjoe.png');"></div>
+    <div class="hero-container">
+      <div class="hero-content">
+        <span class="hero-tag"><i class="fa-solid fa-plane-departure"></i> 2026 暑假精選家庭遊</span>
+        <h1 class="hero-title">日本福岡七天六夜<br><span class="gradient-text">極致奢華雙城探索</span></h1>
+        <p class="hero-desc">為您量身打造的家庭專屬旅行網頁。深入漫步大正浪漫的門司港、探訪難攻不落的熊本城，並享受柳川水鄉遊船與天神爆買樂趣。全方位對接交通票券與最佳行李策略。</p>
+        <div class="hero-actions">
+          <a href="#itinerary" class="btn btn-primary btn-lg">瀏覽行程表 <i class="fa-solid fa-arrow-down"></i></a>
+          <a href="#attractions" class="btn btn-outline btn-lg">景點歷史故事</a>
+        </div>
+      </div>
+      
+      <!-- Quick Info Cards -->
+      <div class="hero-stats">
+        <div class="stat-card">
+          <i class="fa-solid fa-calendar-check"></i>
+          <div>
+            <h3>旅行日期</h3>
+            <p>6/27 (六) - 7/3 (五)</p>
+          </div>
+        </div>
+        <div class="stat-card">
+          <i class="fa-solid fa-users"></i>
+          <div>
+            <h3>團員人數</h3>
+            <p>4 位大人專屬</p>
+          </div>
+        </div>
+        <div class="stat-card">
+          <i class="fa-solid fa-hotel"></i>
+          <div>
+            <h3>住宿飯店</h3>
+            <p>精選 3 間特色飯店</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Section: Itinerary -->
+  <section class="section itinerary-section" id="itinerary">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">THE SCHEDULE</span>
+        <h2 class="section-title">每日詳細行程表</h2>
+        <div class="title-bar"></div>
+        <p class="section-desc">我們精心串聯了博多、小倉、門司港、熊本、海之中道與太宰府柳川，規劃出流暢無縫的每日移動時間軸。</p>
+      </div>
+
+      <div class="itinerary-wrapper">
+        <!-- Day Selectors (Left side) -->
+        <div class="day-selectors" id="day-selectors">
+          <!-- Rendered dynamically or statically for SEO -->
+          <button class="day-btn active" data-day="1">
+            <span class="day-num">Day 1</span>
+            <span class="day-date">6/27 (六)</span>
+            <span class="day-title">啟程與運河城</span>
+          </button>
+          <button class="day-btn" data-day="2">
+            <span class="day-num">Day 2</span>
+            <span class="day-date">6/28 (日)</span>
+            <span class="day-title">門司港與小倉</span>
+          </button>
+          <button class="day-btn" data-day="3">
+            <span class="day-num">Day 3</span>
+            <span class="day-date">6/29 (一)</span>
+            <span class="day-title">歷史熊本城</span>
+          </button>
+          <button class="day-btn" data-day="4">
+            <span class="day-num">Day 4</span>
+            <span class="day-date">6/30 (二)</span>
+            <span class="day-title">海之中道水族館</span>
+          </button>
+          <button class="day-btn" data-day="5">
+            <span class="day-num">Day 5</span>
+            <span class="day-date">7/1 (三)</span>
+            <span class="day-title">市區神社與福岡塔</span>
+          </button>
+          <button class="day-btn" data-day="6">
+            <span class="day-num">Day 6</span>
+            <span class="day-date">7/2 (四)</span>
+            <span class="day-title">太宰府與柳川遊船</span>
+          </button>
+          <button class="day-btn" data-day="7">
+            <span class="day-num">Day 7</span>
+            <span class="day-date">7/3 (五)</span>
+            <span class="day-title">市區爆買與返台</span>
+          </button>
+        </div>
+
+        <!-- Day Details Container (Right side) -->
+        <div class="day-contents" id="day-contents">
+          <!-- Day 1 Detail Content -->
+          <div class="day-panel active" id="day-panel-1">
+            <div class="panel-header">
+              <div class="panel-title-group">
+                <span class="badge badge-primary">Day 1</span>
+                <h3>啟程福岡 · 漫步博多運河城</h3>
+              </div>
+              <span class="panel-meta"><i class="fa-solid fa-plane"></i> 航班資訊：亞航 12:00 $\rightarrow$ 15:20 | <i class="fa-solid fa-hotel"></i> 住宿：Amistad Hotel</span>
+            </div>
+            
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="time-marker">09:30</div>
+                <div class="timeline-content">
+                  <h4>桃園機場報到</h4>
+                  <p>提前於桃園國際機場第二航廈亞洲航空（AirAsia）櫃檯完成登機與行李託運手續。</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="time-marker">12:00</div>
+                <div class="timeline-content">
+                  <h4>起飛啟程</h4>
+                  <p>起飛前往福岡。預計航程 2 小時 20 分。請於機上填寫入關文件或準備好 Visit Japan Web 的 QR Code。</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="time-marker">15:20</div>
+                <div class="timeline-content">
+                  <h4>抵達福岡國際機場</h4>
+                  <p>辦理入境手續與行李提取。出關後，於航廈一樓搭乘日本計程車直達第一間飯店。</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="time-marker">16:30</div>
+                <div class="timeline-content">
+                  <h4>飯店 Check-in（Amistad Hotel Fukuoka）</h4>
+                  <p>抵達博多口側的 Amistad Hotel 辦理入住手續，放妥行李並稍作休息。</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="time-marker">17:30</div>
+                <div class="timeline-content">
+                  <h4>博多運河城（Canal City Hakata）探索</h4>
+                  <p>步行前往運河城逛街。推薦於 B1 太陽廣場觀賞 **21:00 鋼彈緊急出動 3D 光雕全景水舞秀**（2 樓或 3 樓中央平台視野最佳）。晚餐於拉麵競技場享用熱騰騰的道地博多豚骨拉麵。</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Day 2 Detail Content -->
+          <div class="day-panel" id="day-panel-2">
+            <div class="panel-header">
+              <div class="panel-title-group">
+                <span class="badge badge-primary">Day 2</span>
+                <h3>關門海峽環狀遊與小倉古城</h3>
+              </div>
+              <span class="panel-meta"><i class="fa-solid fa-train"></i> 交通：音速號特急、四葉草車票 | <i class="fa-solid fa-hotel"></i> 住宿：Amistad Hotel</span>
+            </div>
+            
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="time-marker">08:21</div>
+                <div class="timeline-content">
+                  <h4>搭乘特急音速號 (Sonic 7)</h4>
+                  <p>從博多車站出發，搭乘帥氣的金屬藍特急音速號列車前往小倉站（約 46 分鐘）。</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="time-marker">09:40</div>
+                <div class="timeline-content">
+                  <h4>抵達門司港懷舊街區</h4>
+                  <p>從小倉轉乘普通車抵達門司港站。購買「關門海峽四葉草車票」實體套票（大人 1,000 日圓）。</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="time-marker">10:00</div>
+                <div class="timeline-content">
+                  <h4>🚂 第 1 站：復古觀光小火車「潮風號」</h4>
+                  <p>搭乘全日本最慢、最可愛的「潮風號」復古列車，沿著海灣徐徐行駛，穿過會發光的藍光海底隧道。</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="time-marker">10:30</div>
+                <div class="timeline-content">
+                  <h4>🚶 第 2 站：關門海底人行步道</h4>
+                  <p>走入地下 60 公尺深的海底人行道（全長 780 公尺），在中央的「福岡縣/山口縣」分界線拍照打卡，步行跨越海峽！</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="time-marker">11:00</div>
+                <div class="timeline-content">
+                  <h4>🚌 第 3 站：山電巴士 $\rightarrow$ 唐戶市場</h4>
+                  <p>出隧道山口縣端後搭乘巴士前往唐戶市場。在「活きいき馬關街」大快朵頤現做握壽司、海瞻、炸河豚，並順遊赤間神宮與日清講和紀念館。</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="time-marker">13:15</div>
+                <div class="timeline-content">
+                  <h4>🚢 第 4 站：關門連絡船返回門司港</h4>
+                  <p>搭乘快速渡輪橫跨海峽（約 5 分鐘）回到門司港。在門司港懷舊區漫步、與經典香蕉人合影，隨後返回小倉。</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="time-marker">15:30</div>
+                <div class="timeline-content">
+                  <h4>參觀小倉城</h4>
+                  <p>漫步於擁有獨特「唐造」結構的小倉城天守閣與庭園，了解細川氏的建城傳奇。</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="time-marker">17:39</div>
+                <div class="timeline-content">
+                  <h4>搭乘音速號回博多</h4>
+                  <p>搭乘音速 46 號返回博多，結束精彩的一日環狀海峽跨島之旅。</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Day 3 Detail Content -->
+          <div class="day-panel" id="day-panel-3">
+            <div class="panel-header">
+              <div class="panel-title-group">
+                <span class="badge badge-primary">Day 3</span>
+                <h3>熊本城震撼體驗與酷MA萌部長相會</h3>
+              </div>
+              <span class="panel-meta"><i class="fa-solid fa-train-subway"></i> 交通：九州新幹線 | <i class="fa-solid fa-hotel"></i> 住宿：montan HAKATA (換飯店)</span>
+            </div>
+            
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="time-marker">08:30</div>
+                <div class="timeline-content">
+                  <h4>退房與寄放行李</h4>
+                  <p>Amistad Hotel 退房，將行李拉至 **montan HAKATA** 櫃檯辦理寄放（換飯店策略）。</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="time-marker">08:56</div>
+                <div class="timeline-content">
+                  <h4>搭乘新幹線前往熊本</h4>
+                  <p>從博多車站搭乘新幹線瑞穗號（Mizuho），僅需 38 分鐘即可抵達熊本站。</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="time-marker">10:00</div>
+                <div class="timeline-content">
+                  <h4>熊本城與天守閣</h4>
+                  <p>搭路面電車前往熊本城。欣賞雄偉的「武者返」斜坡石牆與震後重生的奇蹟天守閣。隨後逛「櫻之馬場城彩苑」吃小吃。</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="time-marker">12:15</div>
+                <div class="timeline-content">
+                  <h4>下通商店街午餐與逛街</h4>
+                  <p>在熱鬧的下通商店街進行藥妝爆買，並享用熊本道地黑亭拉麵或馬肉刺身壽司。</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="time-marker">14:30</div>
+                <div class="timeline-content">
+                  <h4>酷MA萌廣場卡位（鶴屋百貨）</h4>
+                  <p>提早半小時抵達酷MA萌（熊本熊）部長辦公室，與部長辦公桌拍照、挑選限定聯名商品並等待表演開場。</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="time-marker">15:00</div>
+                <div class="timeline-content">
+                  <h4>💥 酷MA萌部長舞台秀</h4>
+                  <p>近距離觀賞熊本熊部長超級動感的熱舞唱跳與幽默體操表演（秀長約 30 分鐘）。</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="time-marker">16:30</div>
+                <div class="timeline-content">
+                  <h4>搭新幹線返回博多</h4>
+                  <p>回到熊本站，搭新幹線返回博多，並回 montan HAKATA 完成正式辦理 Check-in。</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Day 4 Detail Content -->
+          <div class="day-panel" id="day-panel-4">
+            <div class="panel-header">
+              <div class="panel-title-group">
+                <span class="badge badge-primary">Day 4</span>
+                <h3>海洋世界深度看秀與海濱遊憩</h3>
+              </div>
+              <span class="panel-meta"><i class="fa-solid fa-train"></i> 交通：JR通勤電車 | <i class="fa-solid fa-hotel"></i> 住宿：montan HAKATA</span>
+            </div>
+            
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="time-marker">09:22</div>
+                <div class="timeline-content">
+                  <h4>出發前往海之中道</h4>
+                  <p>從博多站搭乘 JR 鹿兒島本線（區間快速）到香椎站，轉乘 JR 香椎線，10:00 抵達海之中道站。</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="time-marker">10:30</div>
+                <div class="timeline-content">
+                  <h4>1️⃣ 海豹餵食秀（海獸島）</h4>
+                  <p>開館後直奔海獸島，觀賞活潑可愛的海豹與海獅爭相討食的萌樣。</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="time-marker">11:00</div>
+                <div class="timeline-content">
+                  <h4>2️⃣ 沙丁魚燈光秀（外洋大水槽）</h4>
+                  <p>在大水槽前，看 2 萬隻沙丁魚伴隨著音樂與迷幻燈光，捲起壯觀的深海風暴。</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="time-marker">11:45</div>
+                <div class="timeline-content">
+                  <h4>3️⃣ 戶外劇場海豚海獅秀（主秀）</h4>
+                  <p>坐上以博多灣為背景的看台，欣賞水族館最核心的戶外海豚大躍進與海獅滑稽表演（建議坐中後排防濕）。</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="time-marker">12:20</div>
+                <div class="timeline-content">
+                  <h4>Reilly 餐廳午餐或回市區</h4>
+                  <p>可在水族館地下餐廳一邊看海豚一邊用餐，或直接搭車回博多車站地下美食街大飽口福。</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="time-marker">14:00</div>
+                <div class="timeline-content">
+                  <h4>海之中道海濱公園漫步</h4>
+                  <p>租借單車或步行在廣闊的國家級海濱公園內，親近自然花卉與動物森林，隨後返回博多市區逛街。</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Day 5 Detail Content -->
+          <div class="day-panel" id="day-panel-5">
+            <div class="panel-header">
+              <div class="panel-title-group">
+                <span class="badge badge-primary">Day 5</span>
+                <h3>博多歷史散策、天神商圈與福岡塔</h3>
+              </div>
+              <span class="panel-meta"><i class="fa-solid fa-train-subway"></i> 交通：地鐵一日券、西鐵巴士 | <i class="fa-solid fa-hotel"></i> 住宿：Richmond Hotel 福岡天神 (換飯店)</span>
+            </div>
+            
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="time-marker">09:30</div>
+                <div class="timeline-content">
+                  <h4>寄放行李至第三間飯店</h4>
+                  <p>montan HAKATA 退房，乘地鐵至天神，將行李寄放於 **Richmond Hotel 福岡天神**（極佳地理位置）。</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="time-marker">10:00</div>
+                <div class="timeline-content">
+                  <h4>櫛田神社與川端通老街</h4>
+                  <p>搭地鐵機場線至祇園站。參拜博多總鎮守「櫛田神社」，一睹長年展示的超巨大裝飾山笠。隨後在 400 米長的川端通商店街老街漫步。</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="time-marker">12:00</div>
+                <div class="timeline-content">
+                  <h4>老店豚骨拉麵午餐</h4>
+                  <p>在川端通商店街內品嚐在地經典的博多豚骨拉麵，並吃上一碗香甜的川端紅豆湯（Zenzai）。</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="time-marker">13:30</div>
+                <div class="timeline-content">
+                  <h4>天神地下街與商圈大爆買</h4>
+                  <p>步行前往天神商圈。橫掃歐洲石磚風格的天神地下街、天神 LOFT，逛岩田屋與三越百貨（持護照拿外國人 5% 優惠券）。</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="time-marker">17:00</div>
+                <div class="timeline-content">
+                  <h4>回飯店正式入住</h4>
+                  <p>回 Richmond Hotel 完成 Check-in，放好爆買的戰利品並稍做休息。</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="time-marker">18:00</div>
+                <div class="timeline-content">
+                  <h4>🗼 福岡塔絕美夕陽夜景</h4>
+                  <p>搭西鐵巴士前往百道濱海灘，登上 234 米高的日本最高海濱塔「福岡塔」，俯瞰博多灣 360 度無死角浪漫暮色與夜景（避開公休時間）。</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="time-marker">20:00</div>
+                <div class="timeline-content">
+                  <h4>中洲屋台體驗宵夜</h4>
+                  <p>搭巴士回市區，於那珂川旁的中洲屋台（路邊攤）品嚐一口餃子、烤串與明太子玉子燒，感受在地福岡夜生活。</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Day 6 Detail Content -->
+          <div class="day-panel" id="day-panel-6">
+            <div class="panel-header">
+              <div class="panel-title-group">
+                <span class="badge badge-primary">Day 6</span>
+                <h3>柳川浪漫遊船與太宰府天滿宮參拜</h3>
+              </div>
+              <span class="panel-meta"><i class="fa-solid fa-train"></i> 交通：西鐵觀光套票 | <i class="fa-solid fa-hotel"></i> 住宿：Richmond Hotel 福岡天神</span>
+            </div>
+            
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="time-marker">08:30</div>
+                <div class="timeline-content">
+                  <h4>出發前往太宰府</h4>
+                  <p>於西鐵福岡天神站二樓售票處購買「太宰府・柳川觀光套票」，乘電車直奔學問之神太宰府。</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="time-marker">09:30</div>
+                <div class="timeline-content">
+                  <h4>太宰府天滿宮與御神牛</h4>
+                  <p>摸摸象徵智慧的御神牛，入內參拜學問之神菅原道真。參觀名建築師隈研吾設計的星巴克，表參道吃剛出爐的烤梅枝餅。</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="time-marker">11:30</div>
+                <div class="timeline-content">
+                  <h4>九州國立博物館與明太子午餐</h4>
+                  <p>欣賞館內珍貴歷史文物。午餐推薦在太宰府吃奢華的明太子茶泡飯，或在地特色名物。</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="time-marker">13:00</div>
+                <div class="timeline-content">
+                  <h4>搭乘西鐵前往水鄉柳川</h4>
+                  <p>乘坐西鐵列車前往水鄉柳川站（約 50 分鐘）。</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="time-marker">14:00</div>
+                <div class="timeline-content">
+                  <h4>🛶 柳川悠閒搖船體驗</h4>
+                  <p>乘上傳統平底木船（Donkobune），由頭戴草帽的船夫撐篙划水，一邊吟唱當地民謠一邊穿越低矮橋墩，享受 70 分鐘的浪漫水路。</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="time-marker">15:30</div>
+                <div class="timeline-content">
+                  <h4>立花氏庭園「御花」散步</h4>
+                  <p>上岸後自由在柳川老街漫步，參觀舊柳川藩主立花家的別墅「御花」與美麗的松濤園。</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="time-marker">17:00</div>
+                <div class="timeline-content">
+                  <h4>返回天神，頂級燒肉晚餐</h4>
+                  <p>搭乘西鐵電車返回天神。晚餐預約高檔黑毛和牛燒肉或豪華壽喜燒，大快朵頤一番。</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Day 7 Detail Content -->
+          <div class="day-panel" id="day-panel-7">
+            <div class="panel-header">
+              <div class="panel-title-group">
+                <span class="badge badge-primary">Day 7</span>
+                <h3>天神潮流採購與啟程返台</h3>
+              </div>
+              <span class="panel-meta"><i class="fa-solid fa-plane-arrival"></i> 航班：亞航 19:00 $\rightarrow$ 20:25 | <i class="fa-solid fa-taxi"></i> 交通：計程車往機場</span>
+            </div>
+            
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="time-marker">09:00</div>
+                <div class="timeline-content">
+                  <h4>悠閒早餐與行李整理</h4>
+                  <p>在飯店或天神市區享用美味咖啡與早餐，最後整理行李箱，將戰利品裝箱完畢。</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="time-marker">11:00</div>
+                <div class="timeline-content">
+                  <h4>退房與最後逛街衝刺</h4>
+                  <p>Richmond Hotel 退房並寄放行李。隨後前往天神大名區（Supreme, Human Made等潮流小店）或百貨商場進行最後的補貨與手信採購。</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="time-marker">15:30</div>
+                <div class="timeline-content">
+                  <h4>回飯店提領行李</h4>
+                  <p>返回 Richmond Hotel 領取行李，全家準備前往機場。</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="time-marker">16:00</div>
+                <div class="timeline-content">
+                  <h4>搭計程車前往福岡機場</h4>
+                  <p>叫車直達福岡機場國際航廈，車程約 20 分鐘，輕鬆省力免搬重行李。</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="time-marker">16:30</div>
+                <div class="timeline-content">
+                  <h4>機場報到與免稅店補貨</h4>
+                  <p>完成亞洲航空櫃檯報到與託運。出關後在機場免稅店進行長崎蛋糕、明太子、福砂屋等名產最後大掃貨。</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="time-marker">19:00</div>
+                <div class="timeline-content">
+                  <h4>起飛返台</h4>
+                  <p>登機起飛返回台灣（預計台灣時間 20:25 抵達桃園國際機場）。搭車返回林口溫馨的家，結束難忘的七天六夜福岡之旅！</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Attractions (Interactive Map / Cards with Modal) -->
+  <section class="section attractions-section" id="attractions">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">DISCOVER</span>
+        <h2 class="section-title">熱門景點 & 歷史故事手冊</h2>
+        <div class="title-bar"></div>
+        <p class="section-desc">本行程特選了極具深度歷史意涵的文化景點。點選下方卡片，深入探索每個地方的傳奇故事。</p>
+      </div>
+
+      <!-- Filters -->
+      <div class="gallery-filters">
+        <button class="filter-btn active" data-filter="all">全部景點</button>
+        <button class="filter-btn" data-filter="history">歷史文化</button>
+        <button class="filter-btn" data-filter="nature">自然風景</button>
+        <button class="filter-btn" data-filter="food">美食購物</button>
+      </div>
+
+      <!-- Grid -->
+      <div class="gallery-grid" id="gallery-grid">
+        
+        <!-- Spot Card: Mojiko -->
+        <div class="gallery-card" data-category="history" data-spot="mojiko">
+          <div class="card-image">
+            <span class="card-badge"><i class="fa-solid fa-anchor"></i> 歷史懷舊</span>
+            <div class="image-placeholder"><i class="fa-solid fa-ship"></i></div>
+          </div>
+          <div class="card-info">
+            <h3>門司港懷舊街區</h3>
+            <p class="card-intro">橫跨明治與大正時代，瀰漫優雅歐式洋風的古老港灣港口。</p>
+            <button class="btn btn-card-action">了解歷史與特色 <i class="fa-solid fa-chevron-right"></i></button>
+          </div>
+        </div>
+
+        <!-- Spot Card: Kanmon Tunnel -->
+        <div class="gallery-card" data-category="nature" data-spot="kanmon">
+          <div class="card-image">
+            <span class="card-badge"><i class="fa-solid fa-road"></i> 世界罕見</span>
+            <div class="image-placeholder"><i class="fa-solid fa-water"></i></div>
+          </div>
+          <div class="card-info">
+            <h3>關門海底人行隧道</h3>
+            <p class="card-intro">漫步跨越海峽！日本唯一橫跨本州與九州的海底人行隧道。</p>
+            <button class="btn btn-card-action">了解歷史與特色 <i class="fa-solid fa-chevron-right"></i></button>
+          </div>
+        </div>
+
+        <!-- Spot Card: Karato Market -->
+        <div class="gallery-card" data-category="food" data-spot="karato">
+          <div class="card-image">
+            <span class="card-badge"><i class="fa-solid fa-utensils"></i> 生鮮美食</span>
+            <div class="image-placeholder"><i class="fa-solid fa-fish"></i></div>
+          </div>
+          <div class="card-info">
+            <h3>唐戶市場與河豚名物</h3>
+            <p class="card-intro">日本公認「河豚之鄉」，週末限定的超級握壽司海鮮大排檔。</p>
+            <button class="btn btn-card-action">了解歷史與特色 <i class="fa-solid fa-chevron-right"></i></button>
+          </div>
+        </div>
+
+        <!-- Spot Card: Akama Shrine -->
+        <div class="gallery-card" data-category="history" data-spot="akama">
+          <div class="card-image">
+            <span class="card-badge"><i class="fa-solid fa-torii-gate"></i> 神話傳奇</span>
+            <div class="image-placeholder"><i class="fa-solid fa-gopuran"></i></div>
+          </div>
+          <div class="card-info">
+            <h3>赤間神宮</h3>
+            <p class="card-intro">紅白對比的夢幻龍宮造型神宮，供奉悲劇投海的安德天皇。</p>
+            <button class="btn btn-card-action">了解歷史與特色 <i class="fa-solid fa-chevron-right"></i></button>
+          </div>
+        </div>
+
+        <!-- Spot Card: Shimonoseki Hall -->
+        <div class="gallery-card" data-category="history" data-spot="shimonoseki">
+          <div class="card-image">
+            <span class="card-badge"><i class="fa-solid fa-scroll"></i> 課本場景</span>
+            <div class="image-placeholder"><i class="fa-solid fa-book-open"></i></div>
+          </div>
+          <div class="card-info">
+            <h3>日清講和紀念館</h3>
+            <p class="card-intro">清廷簽署《馬關條約》的春帆樓，見證台灣割讓的歷史地標。</p>
+            <button class="btn btn-card-action">了解歷史與特色 <i class="fa-solid fa-chevron-right"></i></button>
+          </div>
+        </div>
+
+        <!-- Spot Card: Kokura Castle -->
+        <div class="gallery-card" data-category="history" data-spot="kokura">
+          <div class="card-image">
+            <span class="card-badge"><i class="fa-solid fa-fort-awesome"></i> 戰國名城</span>
+            <div class="image-placeholder"><i class="fa-solid fa-chess-rook"></i></div>
+          </div>
+          <div class="card-info">
+            <h3>小倉城天守閣</h3>
+            <p class="card-intro">細川忠興建造的「唐造」名城，頂層比下層更寬大的無簷結構。</p>
+            <button class="btn btn-card-action">了解歷史與特色 <i class="fa-solid fa-chevron-right"></i></button>
+          </div>
+        </div>
+
+        <!-- Spot Card: Kumamoto Castle -->
+        <div class="gallery-card" data-category="history" data-spot="kumamoto">
+          <div class="card-image">
+            <span class="card-badge"><i class="fa-solid fa-chess-rook"></i> 三大名城</span>
+            <div class="image-placeholder"><i class="fa-solid fa-archway"></i></div>
+          </div>
+          <div class="card-info">
+            <h3>熊本城天守閣</h3>
+            <p class="card-intro">加藤清正建造「難攻不落」之城，鬼斧神工的「武者返」陡峭石牆。</p>
+            <button class="btn btn-card-action">了解歷史與特色 <i class="fa-solid fa-chevron-right"></i></button>
+          </div>
+        </div>
+
+        <!-- Spot Card: Dazaifu -->
+        <div class="gallery-card" data-category="history" data-spot="dazaifu">
+          <div class="card-image">
+            <span class="card-badge"><i class="fa-solid fa-graduation-cap"></i> 學問之神</span>
+            <div class="image-placeholder"><i class="fa-solid fa-tree"></i></div>
+          </div>
+          <div class="card-info">
+            <h3>太宰府天滿宮</h3>
+            <p class="card-intro">日本天滿宮總本社，祭祀菅原道真，傳說中隨主人飛行的「飛梅」。</p>
+            <button class="btn btn-card-action">了解歷史與特色 <i class="fa-solid fa-chevron-right"></i></button>
+          </div>
+        </div>
+
+        <!-- Spot Card: Yanagawa -->
+        <div class="gallery-card" data-category="nature" data-spot="yanagawa">
+          <div class="card-image">
+            <span class="card-badge"><i class="fa-solid fa-water"></i> 水鄉威尼斯</span>
+            <div class="image-placeholder"><i class="fa-solid fa-ship"></i></div>
+          </div>
+          <div class="card-info">
+            <h3>柳川古城河遊船</h3>
+            <p class="card-intro">乘平底Donko船遊古河道，聆聽歌謠，享用正宗蒸籠鰻魚飯。</p>
+            <button class="btn btn-card-action">了解歷史與特色 <i class="fa-solid fa-chevron-right"></i></button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Hotel & Luggage -->
+  <section class="section hotels-section" id="hotels">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">STAYS & LUGGAGE</span>
+        <h2 class="section-title">精選住宿 & 行李託運策略</h2>
+        <div class="title-bar"></div>
+        <p class="section-desc">我們精選了博多與天神核心商圈的 3 間便利酒店，並安排了無縫的行李中轉寄放策略。</p>
+      </div>
+
+      <div class="hotels-grid">
+        <!-- Hotel 1 -->
+        <div class="hotel-card">
+          <div class="hotel-card-header">
+            <div class="hotel-num">01</div>
+            <h3>Amistad Hotel Fukuoka</h3>
+            <span class="hotel-location"><i class="fa-solid fa-location-dot"></i> 博多口側 (Day 1 - Day 3)</span>
+          </div>
+          <div class="hotel-card-body">
+            <ul>
+              <li><strong>Check-in</strong>：15:00 ~ 隔日凌晨 01:00</li>
+              <li><strong>Check-out</strong>：11:00 前</li>
+              <li><strong>行李寄放</strong>：入住前與退房當天均可「免費寄放」。若超過午夜 12 點 check-in，請透過系統留言通知。</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Hotel 2 -->
+        <div class="hotel-card warning-border">
+          <div class="hotel-card-header">
+            <div class="hotel-num text-warning">02</div>
+            <h3>montan HAKATA</h3>
+            <span class="hotel-location"><i class="fa-solid fa-location-dot"></i> 筑紫口側 (Day 3 - Day 5)</span>
+          </div>
+          <div class="hotel-card-body">
+            <div class="alert-box alert-warning">
+              <i class="fa-solid fa-triangle-exclamation"></i>
+              <span><strong>注意！非 24H 櫃檯</strong><br>櫃檯時間 07:00 - 24:00。必須於 <strong>23:30</strong> 前辦理入住，深夜門鎖會關閉！</span>
+            </div>
+            <ul>
+              <li><strong>Check-in</strong>：16:00 ~ 23:30 (最晚)</li>
+              <li><strong>Check-out</strong>：11:00 前</li>
+              <li><strong>行李寄放</strong>：當天免費寄放。若有跨夜寄放行李（退房後幾天），飯店會收費：每日每件 500 日圓。</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Hotel 3 -->
+        <div class="hotel-card">
+          <div class="hotel-card-header">
+            <div class="hotel-num">03</div>
+            <h3>Richmond Hotel 福岡天神</h3>
+            <span class="hotel-location"><i class="fa-solid fa-location-dot"></i> 天神商圈 (Day 5 - Day 7)</span>
+          </div>
+          <div class="hotel-card-body">
+            <ul>
+              <li><strong>Check-in</strong>：14:00 起（最早辦理入住的酒店）</li>
+              <li><strong>Check-out</strong>：11:00 前</li>
+              <li><strong>行李寄放</strong>：24 小時櫃檯，當天免費寄放行李。若提早將行李黑貓快遞寄至飯店，官方規定最多僅可提前 2 天寄達。</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Luggage strategy banner -->
+      <div class="strategy-banner">
+        <div class="strategy-icon"><i class="fa-solid fa-suitcase-rolling"></i></div>
+        <div class="strategy-content">
+          <h3>💡 全家無搬運負擔的「無痛寄物」策略</h3>
+          <p><strong>換飯店當天（Day 3、Day 5）</strong>，早上 11:00 前在舊飯店退房後，直接把所有大行李箱拉到「下一間飯店」的櫃檯免費寄放（換取行李牌），全家即可雙手空空、輕鬆前往熊本城或天神商圈，晚上回飯店再辦理正式 Check-in 即可！</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Passes -->
+  <section class="section passes-section" id="passes">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">TICKETS & INFO</span>
+        <h2 class="section-title">交通票券 & 行前必看</h2>
+        <div class="title-bar"></div>
+        <p class="section-desc">旅行中會使用到的主要套票與實用提示，出發前確認，安心遊玩。</p>
+      </div>
+
+      <div class="passes-grid">
+        <!-- Pass 1 -->
+        <div class="pass-card">
+          <div class="pass-icon"><i class="fa-solid fa-train-tram"></i></div>
+          <h3>北九州 JR Pass</h3>
+          <p>可用於 Day 2 音速號（博多-小倉來回）、Day 3 新幹線（博多-熊本來回，自由席/指定席）、Day 4 往返海之中道水族館。</p>
+        </div>
+
+        <!-- Pass 2 -->
+        <div class="pass-card">
+          <div class="pass-icon"><i class="fa-solid fa-ticket-simple"></i></div>
+          <h3>關門海峽四葉草車票</h3>
+          <p>包含潮風號復古小火車、關門人行海底隧道（步行）、山電巴士、關門連絡渡輪，門司港與下關環狀一日必買（1,000 日圓）。</p>
+        </div>
+
+        <!-- Pass 3 -->
+        <div class="pass-card">
+          <div class="pass-icon"><i class="fa-solid fa-route"></i></div>
+          <h3>西鐵太宰府·柳川套票</h3>
+          <p>包含天神 $\leftrightarrow$ 柳川 $\leftrightarrow$ 太宰府西鐵電車來回車票與柳川 70 分鐘單程遊船票，於西鐵天神站二樓售票處現場購買。</p>
+        </div>
+      </div>
+
+      <!-- Critical Reminders Callout -->
+      <div class="tips-box">
+        <h3><i class="fa-solid fa-circle-exclamation text-accent"></i> 出發前必備自我查檢清單</h3>
+        <div class="tips-content-grid">
+          <div class="tip-item">
+            <span class="tip-num">1</span>
+            <p><strong>Visit Japan Web 登錄</strong>：出發前 3 天填好海關申報，將產出的 QR Code 截圖存在手機中，入關只需掃碼，省去寫紙本卡片的時間。</p>
+          </div>
+          <div class="tip-item">
+            <span class="tip-num">2</span>
+            <p><strong>福岡塔公休日確認</strong>：福岡塔於 2026/6/29(一) - 6/30(二) 進行年度公休。本行程特別避開，安排於 7/1 (三) 前往，請放心登塔！</p>
+          </div>
+          <div class="tip-item">
+            <span class="tip-num">3</span>
+            <p><strong>酷MA萌部長舞台秀</strong>：熊本熊部長於 6/29 (一) 15:00 表演。官方要求至少提前 30 分鐘（14:30）抵達卡位，否則現場客滿將被婉拒入場。</p>
+          </div>
+          <div class="tip-item">
+            <span class="tip-num">4</span>
+            <p><strong>日幣與計程車 App</strong>：請準備足夠的日圓現金（部分小吃、柳川鰻魚飯可能只收現金）。手機下載 GO 或 Uber 等日本計程車 App，方便機動叫車。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal Component for Spot Details -->
+  <div class="modal" id="details-modal">
+    <div class="modal-overlay" id="modal-overlay"></div>
+    <div class="modal-container">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Close Modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="modal-header">
+        <span class="modal-badge" id="modal-badge"></span>
+        <h3 id="modal-title">景點名稱</h3>
+      </div>
+      <div class="modal-body" id="modal-body-content">
+        <!-- Dynamic content goes here -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="nav-logo">
+            <i class="fa-solid fa-compass logo-icon"></i>
+            <span>極光旅行社 <span class="sub-brand">Fukuoka 2026</span></span>
+          </a>
+          <p>我們致力於為您策劃最完美的客製化自由行。融合歷史文化深度、最順的交通安排與極致的生活享受。</p>
+        </div>
+        <div class="footer-links">
+          <h4>快速連結</h4>
+          <ul>
+            <li><a href="#hero">首頁</a></li>
+            <li><a href="#itinerary">每日行程</a></li>
+            <li><a href="#attractions">景點特色</a></li>
+            <li><a href="#hotels">飯店行李</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 2026暑假家庭旅遊_日本福岡. All rights reserved. Designed for GitHub Pages.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
