@@ -677,6 +677,17 @@ h1, h2, h3, h4 {
   overflow: hidden;
 }
 
+.spot-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: var(--transition-smooth);
+}
+
+.gallery-card:hover .spot-img {
+  transform: scale(1.05);
+}
+
 .card-badge {
   position: absolute;
   top: 16px;
